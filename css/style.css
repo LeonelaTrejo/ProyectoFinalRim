@@ -1,0 +1,295 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+
+font-size: 62.5%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #EEEEEE;
+}
+
+header {
+    height: 60px;
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+}
+
+/*Menu*/
+
+.nav {
+background-color: #222831;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+.logo-image {
+    width: 20%;
+    height: 100%;
+    object-fit: contain;
+    align-self: flex-start;
+
+}
+.nav-list {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    align-items: center;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    
+}
+h1 {
+    font-size: 60px;
+    color: #EEEEEE;
+}
+
+p {
+
+    font-size: 18px;
+    color: #31363F;
+    font-weight: 700;
+}
+
+main {
+    background-image: url(../images/mundo-rim.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    background-color: #76abaebb;
+    padding: 20px;
+    height: 2500px;
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    
+    grid-template-areas: 
+    'caja2 caja2 caja2'
+    'caja1 caja1 caja1'
+    'caja3 caja4 caja4'
+    'caja5 caja5 caja6' 
+    'caja7 caja8 caja8'
+    'caja9 caja9 caja10';
+   
+}
+
+
+
+.c1 {
+    grid-area: caja1;
+
+}
+
+.c2 {
+    grid-area: caja2;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.c3 {
+    grid-area: caja3;
+    
+}
+.c4 {
+    grid-area: caja4;
+}
+.c5 {
+    grid-area: caja5;
+}
+.c6 {
+    grid-area: caja6;
+}
+.c7 {
+    grid-area: caja7;
+}
+.c8 {
+    grid-area: caja8;
+}
+.c9 {
+    grid-area: caja9;
+}
+.c10 {
+    grid-area: caja10;
+}
+
+.box2 {
+    background-color: #76abaebb;
+    padding: 20px;
+    height: 100%;
+    gap: 10px;
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    'titulo titulo titulo titulo'
+    'b1 b2 b3 b4'
+    ;
+}
+.titulo {
+    grid-area: titulo;
+    padding: 20px;
+    width: 100%;
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.b1 {
+    grid-area: b1;
+    width: 100%;
+    height: 100%;
+}
+
+.b2 {
+    grid-area: b2;
+    width: 100%;
+    height: 100%;
+}
+
+.b3 {
+    grid-area: b3;
+    width: 100%;
+    height: 100%;
+}
+
+.b4 {
+    grid-area: b4;
+    width: 100%;
+    height: 100%;
+}
+.box-item {
+    padding: 10px;
+    min-height: 250px;
+    max-height: 100%;
+    width: 100%;
+    border-style: groove;
+    box-shadow: 5px 5px 5px #222831;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxtext {
+    background-color: rgba(0, 0, 0, 0.288);
+    position: absolute;
+    height: 100%;
+    color: #EEEEEE;
+}
+
+.boxtext p {
+    color: #EEEEEE;
+}
+.box-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-item iframe {
+    height: 100%;
+    width: 100%;
+}
+
+section article div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    background-color: #76ABAE;
+    display: flex;
+    flex-direction: row;
+}
+
+.card img {
+    object-fit: fill;
+}
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        
+        height: 100%;
+    }
+
+    .box {
+        grid-template-areas:
+        'caja2 caja2 caja2 caja2'
+        'caja1 caja1 caja1 caja1'
+        'caja3 caja3 caja3 caja3'
+        'caja4 caja4 caja4 caja4'
+        'caja5 caja5 caja5 caja5'
+        'caja6 caja6 caja6 caja6'
+        'caja7 caja7 caja7 caja7'
+        'caja8 caja8 caja8 caja8'
+        'caja9 caja9 caja9 caja9'
+        'caja10 caja10 caja10 caja10';
+
+        height: 100%;
+
+    }
+
+    .box2 {
+        grid-template-areas:
+        'titulo titulo titulo titulo'
+        'b1 b1 b1 b1'
+        'b2 b2 b2 b2'
+        'b3 b3 b3 b3'
+        'b4 b4 b4 b4'
+        ;
+    }
+}
+@media (max-width: 510px) {
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    p {
+    
+        font-size: 14px;
+        color: #31363F;
+        font-weight: 700;
+
+}
+}
