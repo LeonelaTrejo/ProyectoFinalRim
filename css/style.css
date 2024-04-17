@@ -242,6 +242,30 @@ section article div {
     object-fit: fill;
 }
 
+.box3 {
+    background-color: #76abaebb;
+    padding: 20px;
+    height: 100%;
+    gap: 10px;
+    gap: 6px;
+
+    }
+#accordionExample {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.accordeonimg img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
 @media (max-width: 720px) {
     header {
         flex-direction: column;
@@ -278,6 +302,14 @@ section article div {
         'b4 b4 b4 b4'
         ;
     }
+}
+
+footer {
+    background-color: #31363F;
+}
+
+footer p {
+    color: #EEEEEE;
 }
 @media (max-width: 510px) {
 
